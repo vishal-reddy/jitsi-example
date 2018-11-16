@@ -1,0 +1,24 @@
+{
+    "id": "xmppmeetjitsi",
+    "image": "jitsi/prosody",
+    "volumes": {
+        "prosody": "/.jitsi-meet-cfg/prosody"
+    },
+    "env": {
+        "ENABLE_AUTH": "1",
+        "ENABLE_GUESTS": "1",
+        "XMPP_DOMAIN": "meetjitsi",
+        "XMPP_AUTH_DOMAIN": "authmeetjitsi",
+        "XMPP_GUEST_DOMAIN": "guestmeetjitsi",
+        "XMPP_MUC_DOMAIN": "mucmeetjitsi",
+        "XMPP_INTERNAL_MUC_DOMAIN": "internalmucmeetjitsi",
+        "JICOFO_COMPONENT_SECRET": "s3cr37",
+        "JICOFO_AUTH_USER": "focus",
+        "JICOFO_AUTH_PASSWORD": "passw0rd",
+        "JVB_AUTH_USER": "jvb",
+        "JVB_AUTH_PASSWORD": "passw0rd",
+        "JIGASI_XMPP_USER": "jigasi",
+        "JIGASI_XMPP_PASSWORD": "passw0rd",
+        "TZ": "Europe/Amsterdam"
+    }
+}

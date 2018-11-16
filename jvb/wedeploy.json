@@ -1,0 +1,22 @@
+{
+    "id": "jvb",
+    "image": "jitsi/jvb",
+    "volumes": {
+        "jicofo": "/.jitsi-meet-cfg/jvb"
+    },
+    "port": 10000,
+    "env": {
+        "XMPP_AUTH_DOMAIN": "authmeetjitsi",
+        "XMPP_INTERNAL_MUC_DOMAIN": "internalmucmeetjitsi",
+        "XMPP_SERVER": "xmppmeetjitsi",
+        "JVB_AUTH_USER": "jvb",
+        "JVB_AUTH_PASSWORD": "passw0rd",
+        "JVB_BREWERY_MUC": "jvbbrewery",
+        "JVB_PORT": "10000",
+        "JVB_STUN_SERVERS": "stun.l.google.com:19302,stun1.l.google.com:19302,stun2.l.google.com:19302",
+        "JVB_ENABLE_APIS": "rest,colibri",
+        "JICOFO_AUTH_USER": "focus",
+        "TZ": "Europe/Amsterdam"
+    },
+    "dependencies": ["xmppmeetjitsi"]
+}

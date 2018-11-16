@@ -1,0 +1,23 @@
+{
+    "id": "web",
+    "image": "jitsi/web",
+    "port": 443,
+    "volumes": {
+        "jitsiweb": "/.jitsi-meet-cfg/web"
+    },
+    "env": {
+        "ENABLE_AUTH": "1",
+        "ENABLE_GUESTS": "1",
+        "ENABLE_LETSENCRYPT": "1",
+        "ENABLE_HTTP_REDIRECT": "1",
+        "JICOFO_AUTH_USER": "focus",
+        "LETSENCRYPT_DOMAIN": "web-jitsi.wedeploy.io",
+        "LETSENCRYPT_EMAIL": "alice@atlanta.net",
+        "XMPP_DOMAIN": "meetjitsi",
+        "XMPP_AUTH_DOMAIN": "authmeetjitsi",
+        "XMPP_BOSH_URL_BASE": "http://xmppmeetjitsi:5280",
+        "XMPP_GUEST_DOMAIN": "guestmeetjitsi",
+        "XMPP_MUC_DOMAIN": "mucmeetjitsi",
+        "TZ": "Europe/Amsterdam"
+    }
+}

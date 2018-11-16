@@ -1,0 +1,22 @@
+{
+    "id": "jicofo",
+    "image": "jitsi/jicofo",
+    "volumes": {
+        "jicofo": "/.jitsi-meet-cfg/jicofo"
+    },
+    "env": {
+        "ENABLE_AUTH": "1",
+        "XMPP_DOMAIN": "meetjitsi",
+        "XMPP_AUTH_DOMAIN": "authmeetjitsi",
+        "XMPP_INTERNAL_MUC_DOMAIN": "internalmucmeetjitsi",
+        "XMPP_SERVER": "xmppmeetjitsi",
+        "JICOFO_COMPONENT_SECRET": "s3cr37",
+        "JICOFO_AUTH_USER": "focus",
+        "JICOFO_AUTH_PASSWORD": "passw0rd",
+        "JVB_BREWERY_MUC": "jvbbrewery",
+        "JVB_AUTH_PASSWORD": "passw0rd",
+        "JIGASI_BREWERY_MUC": "jigasibrewery",
+        "TZ": "Europe/Amsterdam"
+    },
+    "dependencies": ["xmppmeetjitsi"]
+}
